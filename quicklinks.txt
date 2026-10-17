@@ -1,2 +1,3 @@
 Markdown maths guide: https://www.tomarkdown.org/guides/markdown-math
+Markdown guide: https://www.markdownguide.org/cheat-sheet/
 

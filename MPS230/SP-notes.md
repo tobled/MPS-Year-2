@@ -99,3 +99,9 @@ At high angles/ energies, the distance of closest approach becomes small enough 
 ```math
 R_{K} = r_{0}A^{\frac{1}{3}}
 ```
+
+## Charge and Matter Density
+
+The differential cross section for the elastic scattering of an electron from a nucleus with a finite charge distribution $\rho (r)$ is given by the scattering cross section from a point charge, corrected by a form factor
+
+
