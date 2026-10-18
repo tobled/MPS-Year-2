@@ -203,4 +203,142 @@ $$
 \end{array}
 $$
 
+## Nuclear Binding Energy and Mass Defect
 
+> |Quantity|Measurement|
+> |-|-|
+> |$E_{N}$|Energy of nucleus|
+> |$E_{B}|Nuclera binding energy|
+> |$E_{0}$|Rest energy from Protons and Neutrons|
+> |$A$|Mass Number|
+> |$Z$|Proton Number|
+> |$m_{x}$|Mass of x|
+> |$N$|Neutron Number|
+> |$\Delta M_{N}$|Nuclear mass defect|
+
+Consider a system of protons and neutrons and the nucleus at rest
+
+```math
+E_{0}(A,Z) = (Zm_{p} + (A-Z)m_{n})c^{2} = (Zm_{p}+Nm_{n})c^{2}
+```
+
+For free nucleons
+
+```math
+E_{N}(A,Z) = M_{N}(A,Z)c^{2}
+```
+
+```math
+E_{N}(A,Z) = E_{0}(A,Z) - E_{B}(A,Z)
+```
+
+Becomes:
+
+```math
+M_{N}(A,Z)c^{2} = (Zm_{p} + Nm_{n})c^{2} - E_{B}(A,Z)
+```
+
+```math
+M_{N}(A,Z) = (Zm_{p} + Nm_{n}) - \frac{E_{B}(A,Z)}{c^{2}}
+```
+
+The mass defect is defined as
+
+```math
+\Delta M_{N}(A,Z) = (Zm_{p} + Nm_{n}) - M_{N}(A,Z) = \frac{E_{B}(A,Z)}{c^{2}}
+```
+
+```math
+\Delta M_{N}(A,Z) = ZM_{H} + Nm_{n} - M(A,Z) = \frac{E_{B}(A,Z)}{c^{2}}
+```
+
+> |Quantity|Measurement|
+> |-|-|
+> |$M_{H}$|Atomic mass of neutral hydrogen atom|
+> |$1 u$|$931.49$ $MeV/c^{2}$|
+
+## Nuclear Stability
+
+For small $Z$, stable nuclei have roughly the same number of protons and neutrons $(Z \approx N)$.  For large nuclei, stable isotopes have $Z < N$
+
+There also seems to be a pattern of even $Z$ and even $N$ for stable nuclei.
+
+## The Liquid Drop Model and Semi-Empirical Mass Formula
+
+For all but the lightest nuclei, the binding energy can be reproduced by a formula that uses the idea that the nucleus can be treated as a liquid drop of nucleons. It uses the these two properties:
+
+- Interior mass densities are approximately constant
+- Total binding energies are approximately proportional to their masses $\frac{B}{A} \approx \text{const.}$
+
+These can be compared with the macroscopic drops of incompressible liquid:
+
+- Interior denisties are the same
+- Heats of vaporization are proportional to their masses
+
+The heat of vapourization is the energy required to disperse the drop into its constituent molecules much like the binding energy of the nucleus
+
+We can start with this equation to develop a semi-empirical mass formula by including terms that account for nuclear properties that may be quantum-mechanical rather than classical
+
+```math
+M_{N}(A,Z) = (Zm_{p} + Nm_{n}) - \frac{E_{B}(A,Z)}{c^{2}}
+```
+
+## The Terms
+
+Coeffiecients of the semi-empirical mass formula
+
+> |Term|Quantity|Value $(MeV)$|
+> |-|-|-|
+> |Volume|$a_{V}$|$15.8$|
+> |Surface|$a_{S}$|$18.3$|
+> |Coulomb|$a_{C}$|$0.714$|
+> |Asymmetry|$a_{C}$|$23.2$|
+> |Pairing|$a_{\delta}$|$12.0$|
+
+### Volume Term
+
+The force that keeps the nucleus together. The short range of the nuclear force implies that each nucleon interacts only with its nearest neighbours. $K$ is the number of neighbouring nucleons where the contribution is $KA \propto A$
+
+```math
+E_{volume} = a_{V}A
+```
+
+### Surface Term
+
+Surface nucleons experience fewer attractive interactions that those in the interior
+
+```math
+E_{surface} = - a_{S}A^{\frac{2}{3}}
+```
+
+### Coulomb Term
+
+Protons have a replusive Coulomb force that reduces binding energy, happens between pairs
+
+```math
+E_{Coulomb} = -a_{C} \frac{Z(Z-1)}{A^{\frac{1}{3}}}
+```
+
+### Asymmetry Term
+
+Low mass number stable nuclei have equal numbers of protons fand neutrons
+
+```math
+E_{asymmetry} = -a_{A} \frac{(N-Z)^{2}}{A}
+```
+
+### Pairing Term
+
+$$ \delta(A,Z) = \begin{cases} +\Delta, & \text{even-even nuclei,} \\ 0, & \text{odd A,} \\ +\Delta, & \text{odd-odd nuclei,} \end{cases} $$
+
+Where
+
+```math
+\Delta = a_{\delta} A^{-\frac{1}{2}}
+```
+
+## Formula
+
+```math
+E_{B}(A,Z) = a_{V}A - a_{S}A\frac{2}{3} - a_{C}\frac{Z(Z-1)}{A^{\frac{1}{3}}} - a_{A}\frac{(N-Z)^{2}}{A} + \delta(A,Z)
+```
