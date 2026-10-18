@@ -108,7 +108,7 @@ The differential cross section for the elastic scattering of an electron from a 
 \frac{d\sigma}{d \Omega} = \left(\frac{d\sigma}{d \Omega}\right)_{point} |F(\mathbf{q}^{2})|^{2}
 ```
 
-Where $\mathbf{q} = \mathbf{P}_{f} - \mathbf{P}_{i}$, initial and final electron momenta. 
+Where $\mathbf{q} = \mathbf{P}_{f} - \mathbf{P}_{i}$, initial and final electron momenta.
 
 It describes how the spatial distribution of charge modifies the amplitude for an electron to scatter from the nucleus with momentum transfer $\mathbf{q}$
 

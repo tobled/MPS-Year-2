@@ -64,7 +64,128 @@ And:
 d'_{2} = \Delta x' = c \Delta t'_{2}
 ```
 
-As well as $d'_{1} = d'_{2} = d = \Delta x$, but in the frame of $O$, the distance that the light has to travel is different between the two lengths.
+As well as $d'_{1} = d'_{2} = d = \Delta x$, but in the frame of $O$, the distance that the light has to travel is two different lengths.
+
+From reference frame $O$
 
 ```math
+d_{1} = \Delta x + v \Delta t_{1}
 ```
+
+But also:
+
+```math
+d_{1} = c \Delta t_{1}
+```
+
+So
+
+```math
+c \Delta t_{1} = \Delta x + v \Delta t_{1}
+```
+
+```math
+\Delta t_{1} = \frac{\Delta x}{c-v}
+```
+
+On the way back the distance is now this because the clock is moving a non-negligible distance while the light is travelling
+
+```math
+d_{2} = \Delta x - v \Delta t_{2}
+```
+
+Also
+
+```math
+d_{2} = c \Delta t_{2}
+```
+
+So
+
+```math
+c \Delta t_{2} = \Delta x - v \Delta t_{2}
+```
+
+```math
+\Delta t_{2} = \frac{\Delta x}{c+v}
+```
+
+Total time must be
+
+```math
+\Delta t = \Delta t_{1} + \Delta t_{2} = \frac{\Delta x}{c-v} + \frac{\Delta x}{c+v} = \frac{2c \Delta x}{c^{2}-v^{2}}
+```
+
+```math
+\Delta t = \frac{2 \Delta x}{c(1-\frac{v^{2}}{c^{2}})}
+```
+
+And we know that
+
+```math
+\Delta t = \frac{\Delta t'}{\sqrt{1-\frac{v^{2}}{c^{2}}}}
+```
+
+For reference frame $O'$
+
+```math
+\Delta t' = \Delta t'_{1} + \Delta t'_{2} = \frac{\Delta x'}{c} + \frac{\Delta x'}{c} = \frac{2\Delta x'}{c}
+```
+
+Substitution gets us
+
+```math
+\Delta t = \frac{\Delta t'}{\sqrt{1-\frac{v^{2}}{c^{2}}}} = \frac{2\Delta x'}{c\sqrt{1-\frac{v^{2}}{c^{2}}}}
+```
+
+So
+
+```math
+\frac{2\Delta x}{c(1- \frac{v^{2}}{c^{2}})} = \frac{2\Delta x'}{c\sqrt{1-\frac{v^{2}}{c^{2}}}}
+```
+
+```math
+\Delta x = \sqrt{1-\frac{v^{2}}{c^{2}}} \Delta x'
+```
+
+```math
+\Delta x = \frac{\Delta x'}{\gamma}
+```
+
+This implies that objects moving close to or at the speed of light will shorten in the direction they travel from the perspective of someone outside the clock
+
+Proper time $\tau$ is a property given to every object
+
+## Lorentz Transformations
+
+A reference frame $O$ has coordinates $x,y,z,t$ whilst a different reference frame $O'$ has coordinates $x',y',z',t'$ each measured relative to the origin reference. 
+
+A single point in space and time is an event, it can be described by either systems
+
+Often we want to find how the primed variables relate to the non prime ones as functions. Events happen regardless of the coordinate system.
+
+Take for example lining up the x axis of $O$ and the x' axis of $O'$ with the direction of the relative velocity $v$ between the reference frames
+
+```math
+\Delta y' = \Delta y, \, \Delta z' = \Delta z
+```
+
+Consider a train moving with velocity $v$ relative to the platform. Where the platform has $O$ and the train has $O'$, and $t= t' = 0$
+
+Let A denote the end of the train that the light pulse is beeing fired from and B as the front of the train by which is the receiver
+
+In $O'$ the interval in the $x'$ direction is $\Delta x'$ and the time interval is $\Delta t' = \frac{\Delta x'}{c}$
+
+$\Delta x'$ is also the proper length $L$. As the light moves from the back to the front, the platform moves an amount $v\Delta t'$ that is Lorentz contracted
+
+```math
+\Delta x' + v\Delta t' = \frac{\Delta x}{\gamma} \implies \Delta x = \gamma (\Delta x' + v \Delta t')
+```
+
+This argument could reverse the primes in the perspective of $O$
+
+```math
+\Delta x' = \gamma (\Delta x + v \Delta t)
+```
+
+

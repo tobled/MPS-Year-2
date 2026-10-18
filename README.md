@@ -5,7 +5,7 @@
 - 212 - add week 2 work for week 3 (current)
 - 213 - Done
 - 217 - Entire
-- 230 - Lecture 2 both
+- 230 - 50%
 
 ### Priority
 
