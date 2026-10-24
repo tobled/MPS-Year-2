@@ -337,8 +337,76 @@ Where
 \Delta = a_{\delta} A^{-\frac{1}{2}}
 ```
 
-## Formula
+## Formula 1
 
 ```math
 E_{B}(A,Z) = a_{V}A - a_{S}A\frac{2}{3} - a_{C}\frac{Z(Z-1)}{A^{\frac{1}{3}}} - a_{A}\frac{(N-Z)^{2}}{A} + \delta(A,Z)
 ```
+
+## Fermi Gas Model
+
+Assume that nucleons in the nucleus move in an attractive average potential that represents the net effect of its interactions with all other nucleons. This potential can be modelled by a 3D finite square well with a radius slightly larger than the nuclear radius
+
+Fermions obey the Pauli exclusion principle, the nucleus can be treated as two independant Fermi gases one for protons and one for neutrons
+
+For small Z, the Coulomb repulsion between protons can be neglected and the energy levels of the proton and neutron systems are the same.
+
+## Decay Q-Value
+
+Conservation of energy for a general decay implies:
+
+```math
+m_{i}c^{2} + T_{i} = \sum m_{f}c^{2} + \sum T_{f}
+```
+
+```math
+(m_{i}-\sum m_{f})c^{2} = \sum T_{f}-T{i}
+```
+
+Difference between the rest energies of the initial and final particles is called the Q-value
+
+```math
+Q = (m_{i}-\sum m_{f})c^{2}
+```
+
+```math
+Q = \sum T_{f} - T_{i}
+```
+
+Q-value is the excess kinetic energy provided to the decay products, a spontaneous decay can only happen if $Q \geq 0$. Q may be quantified in MeV
+
+## Alpha Decay
+
+Alpha decay is an emission of an $\alpha$ particle which is a He nucleus
+
+```math
+_{Z}^{A}P \rightarrow _{Z-2}^{A-4}D + \alpha
+```
+
+### Alpha Decay Example
+
+```math
+Q = (m_{P}-m_{D}-m_{\alpha})c^{2}
+```
+
+If at rest:
+
+```math
+Q = (m_{P}-m_{D}-m_{\alpha})c^{2} = T_{D}+T_{\alpha}
+```
+
+Conservation of momentum requires that $D$ and $\alpha$ move with equal and opposite momenta
+
+Alpha decays typically release energies of order 5 MeV which is much smaller than the rest energies of the particles where $T \ll mc^{2}$ we may safely use the non-relatavistic approximation.
+
+```math
+\frac{T_{D}}{T_{\alpha}} = \frac{m_{D}}{m_{\alpha}}, \, T_{\alpha} + T_{D} = Q
+```
+
+So,
+
+```math
+T_{D} = Q \frac{m_{\alpha}}{m_{\alpha}+m_{D}}, \, T_{\alpha} = Q \frac{m_{D}}{m_{\alpha}+m_{D}}
+```
+
+Typically, the $\alpha$ particle carries 98% of the Q value while the heavier daughter nucleus carries about 2%. Recoil energy is not negligible on orders of 100 keV which exceeds many atomic binding energies in solids. If the decay occurs near the surface of a source, the recoiling nucleus may also escape into the surrounding material.

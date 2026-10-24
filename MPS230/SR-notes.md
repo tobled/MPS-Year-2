@@ -158,7 +158,7 @@ Proper time $\tau$ is a property given to every object
 
 ## Lorentz Transformations
 
-A reference frame $O$ has coordinates $x,y,z,t$ whilst a different reference frame $O'$ has coordinates $x',y',z',t'$ each measured relative to the origin reference. 
+A reference frame $O$ has coordinates $x,y,z,t$ whilst a different reference frame $O'$ has coordinates $x',y',z',t'$ each measured relative to the origin reference.
 
 A single point in space and time is an event, it can be described by either systems
 
@@ -188,4 +188,24 @@ This argument could reverse the primes in the perspective of $O$
 \Delta x' = \gamma (\Delta x + v \Delta t)
 ```
 
+## Simultaneity/ Synchronisation
 
+Consider a light source equally spaced between clocks A and B in one rest frame, when the clocks detect a pulse, they reset. Now consider that the clocks are on opposite ends of the moving train with A at the back. The time it takes for the light to travel to A is $\Delta t_{A}$
+
+```math
+c\Delta A + v\Delta t_{A} = \frac{L}{2\gamma} \quad \rightarrow \quad \Delta t_{A} = \frac{L}{2\gamma (c+v)}
+```
+
+Similarly, the time it takes the light to travel from the source to clock B at the front is $\Delta t_{B}$ and is given by
+
+```math
+c\Delta B + v\Delta t_{B} = \frac{L}{2\gamma} \quad \rightarrow \quad \Delta t_{B} = \frac{L}{2\gamma (c-v)}
+```
+
+In the rest frame, the time difference should be 0 but in the other rest frame, it will be non zero
+
+```math
+\Delta t_{B} - \Delta t_{A} = \frac{L}{2\gamma (c-v)} - \frac{L}{2\gamma (c+v)} = \gamma \frac{vL}{c^{2}}
+```
+
+This shows that simultaneity is a property of the reference frame, and not an intrinsic property of two clocks.

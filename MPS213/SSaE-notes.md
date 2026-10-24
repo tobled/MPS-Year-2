@@ -275,3 +275,70 @@ L_{r+dr} - L_{r} = dL = 4 \pi r^{2} \rho(r) \epsilon \, dr
 ```math
 \frac{dL}{dr} = 4 \pi r^{2} \rho(r) \epsilon
 ```
+
+## Equations of State
+
+We need a relation between Pressure as a function of density, temperature and the composition of the star, this type of equation is named an equation of state
+
+Stars are made of plasmas that have a typical density of $1.5 \times 10^{5} \mathrm{kgm^{-3}}$ with an inter-particle separation of $2.2 \times 10^{-11} \mathrm{m}$. A cubic volume of $0.5\AA$ will contain around 11 protons
+
+Taking the ideal gas equation:
+
+```math
+P_{gas} = nkT
+```
+
+```math
+\rho = nm = nm_{H}\mu
+```
+
+where $n$ is number of particles per unit volume and $m$ is the mean particle mass, $m_{H}$ is the mass of a hydrogen atom, and $\mu$ is the mean molecular weight of the stellar material
+
+```math
+P_{gas} = \frac{kT\rho}{m} = \frac{kT\rho}{m_{H}\mu} = \frac{RT\rho}{\mu}
+```
+
+Where $R = \frac{k}{m_{H}}$
+
+Radiation pressure may not be negligible in stars so the summed pressure is
+
+```math
+P = P_{gas} + P_{rad} = \frac{RT\rho}{\mu} + \frac{aT^{4}}{3}
+```
+
+Where $a$ is the radiation density constant
+
+$\mu$ is not constant and depends on the fractional ionisation of all elements in all parts of a star, we assume that H and He are the most abundant than all other elements and are fully ionised in stellar interiors though this assumption does not hold true closer to the stellar surface
+
+Also assume:
+
+- $X$: the fraction of the mass in H
+- $Y$: the fraction of the mass in He
+- $Z$: the fraction of the mass in all other metals
+- $X+Y+Z=1 \quad \implies \quad X\rho + Y\rho + Z\rho = 1 \rho$
+
+When a particle is fully ionised, its atom is stripped of all of its electrons, leaving individual electrons and a nucleus, measured in $m_{H}$
+
+This leads to:
+
+- H - $n_{H} = \frac{X\rho}{m_{H}/2}$
+- He - $n_{He} = \frac{Y\rho}{4m_{H}/3}$
+- Metals - $n_{Z} = \frac{Z\rho}{2m_{H}}$
+
+```math
+n = n_{H} + n_{He} + n_{Z} = \frac{\rho}{4m_{H}}(8X + 3Y + 2Z)
+```
+
+Use $X+Y+Z = 1$ to remove $Z$
+
+```math
+\frac{\rho}{4m_{H}}(8X + 3Y + 2(1 - X -Y)) =\frac{\rho}{4m_{H}}(6X + Y + 2)
+```
+
+Use $\rho = nm_{H}\mu$
+
+```math
+\mu = \frac{4}{6X+Y+2}
+```
+
+This is a good approximation for $\mu$ when close to the centre
