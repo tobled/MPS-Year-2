@@ -9,7 +9,7 @@
 Initial kinetic energy of a particle with velocity $v_{0}$ and impact parameter $b$ and scattered from the angle, $\theta$. Distance of closest approach $\delta$
 
 ```math
-mbv_{0} = m \delta v 
+mbv_{0} = m \delta v
 ```
 
 ```math
@@ -24,12 +24,12 @@ An example of an experiment which measures the cross section $\sigma$. The most 
 \sigma = \frac{\text{Number of interactions/ time/ target particle}}{\text{Incident particle flux}}
 ```
 
-> |Symbol|Measure|Unit|SI|
-> |-|-|-|-|
-> |$\sigma$|Cross Section|$1b$|$10^{-28}\mathrm{m^{2}}$|
-> |$\phi$|Flux of Incident Beam|-|$\text{in particles} \cdot m^{-2}s^{-1}$|
-> |$N_{target}$|No. of target particles|-|-|
-> |$R$|Rate of observed scattering events|-|$s^{-1}$|
+> | Symbol       | Measure                            | Unit | SI                                       |
+> | ------------ | ---------------------------------- | ---- | ---------------------------------------- |
+> | $\sigma$     | Cross Section                      | $1b$ | $10^{-28}\mathrm{m^{2}}$                 |
+> | $\phi$       | Flux of Incident Beam              | -    | $\text{in particles} \cdot m^{-2}s^{-1}$ |
+> | $N_{target}$ | No. of target particles            | -    | -                                        |
+> | $R$          | Rate of observed scattering events | -    | $s^{-1}$                                 |
 
 ```math
 R = \phi N_{target} \sigma
@@ -45,10 +45,10 @@ Cross section is the effective area taken out of the incoming beam of particles 
 
 Take a setup that uses an alpha particle beam directed at a platinum foil.
 
-> |Quantity|Unit|
-> |-|-|
-> |$E_{kin}$|$5\, \mathrm{MeV}$|
-> |$d$|$1.2 \times 10^{-4} \text{cm}$|
+> | Quantity  | Unit                           |
+> | --------- | ------------------------------ |
+> | $E_{kin}$ | $5\, \mathrm{MeV}$             |
+> | $d$       | $1.2 \times 10^{-4} \text{cm}$ |
 
 We wish to find the fraction of particlse scattered by an angle $\theta \geq 90^{\circ}$ using $b$
 
@@ -78,13 +78,13 @@ N = n \Delta A d
 n = \frac{\rho N_{A}}{M}
 ```
 
-> |Quantity|Measurement|
-> |-|-|
-> |$N$|Number of Platinum Nuclei|
-> |$n$|Number density of the Platinum nuclei|
-> |$\rho$|Mass density|
-> |$M$|Molar Mass|
-> |$N_{A}$|Avogadro's number|
+> | Quantity | Measurement                           |
+> | -------- | ------------------------------------- |
+> | $N$      | Number of Platinum Nuclei             |
+> | $n$      | Number density of the Platinum nuclei |
+> | $\rho$   | Mass density                          |
+> | $M$      | Molar Mass                            |
+> | $N_{A}$  | Avogadro's number                     |
 
 ```math
 f = \frac{\Delta A_{eff, \geq 90^{\circ}}}{\Delta A} = n d \sigma_{\geq 90^{\circ}}
@@ -122,15 +122,15 @@ Also known as the Woods-Saxon Potential
 \rho (r) = \frac{\rho (0)}{1 + \exp \left({\frac{r-R_{\frac{1}{2}}}{d}}\right)}
 ```
 
-> |Quantity|Measurement|
-> |-|-|
-> |$\mathbf{q}$|Momentum transfer|
-> |$\rho(r)$|Charge density|
-> |$\rho(0)$|Central charge density|
-> |$R_{\frac{1}{2}}$|Half-density radius|
-> |$d$|Surface thickness of nucleus|
-> |$R_{K}$|Hard sphere radius|
-> |$r_{0}$|Radius of nucleon $\approx 1.2\text{fm}$|
+> | Quantity          | Measurement                              |
+> | ----------------- | ---------------------------------------- |
+> | $\mathbf{q}$      | Momentum transfer                        |
+> | $\rho(r)$         | Charge density                           |
+> | $\rho(0)$         | Central charge density                   |
+> | $R_{\frac{1}{2}}$ | Half-density radius                      |
+> | $d$               | Surface thickness of nucleus             |
+> | $R_{K}$           | Hard sphere radius                       |
+> | $r_{0}$           | Radius of nucleon $\approx 1.2\text{fm}$ |
 
 Electron scattering experiment yielded:
 
@@ -142,14 +142,14 @@ Electron scattering experiment yielded:
 
 ## Relativistic Kinematics
 
-> |Quantity|Measurement|
-> |-|-|
-> |$m$|Invariant/rest/proper mass|
-> |$E$|Energy|
-> |$\mathbf{p}$|Momentum|
-> |$c$|Speed of light|
-> |$\gamma$|$\frac{1}{\sqrt{1- \beta^{2}}}$|
-> |$\beta$|\frac{v}{c}|
+> | Quantity     | Measurement                     |
+> | ------------ | ------------------------------- |
+> | $m$          | Invariant/rest/proper mass      |
+> | $E$          | Energy                          |
+> | $\mathbf{p}$ | Momentum                        |
+> | $c$          | Speed of light                  |
+> | $\gamma$     | $\frac{1}{\sqrt{1- \beta^{2}}}$ |
+> | $\beta$      | \frac{v}{c}                     |
 
 This quantity is invariant, some particles may be massless
 
@@ -205,16 +205,16 @@ $$
 
 ## Nuclear Binding Energy and Mass Defect
 
-> |Quantity|Measurement|
-> |-|-|
-> |$E_{N}$|Energy of nucleus|
-> |$E_{B}|Nuclera binding energy|
-> |$E_{0}$|Rest energy from Protons and Neutrons|
-> |$A$|Mass Number|
-> |$Z$|Proton Number|
-> |$m_{x}$|Mass of x|
-> |$N$|Neutron Number|
-> |$\Delta M_{N}$|Nuclear mass defect|
+> | Quantity       | Measurement                           |
+> | -------------- | ------------------------------------- |
+> | $E_{N}$        | Energy of nucleus                     |
+> | $E\_{B}        | Nuclera binding energy                |
+> | $E_{0}$        | Rest energy from Protons and Neutrons |
+> | $A$            | Mass Number                           |
+> | $Z$            | Proton Number                         |
+> | $m_{x}$        | Mass of x                             |
+> | $N$            | Neutron Number                        |
+> | $\Delta M_{N}$ | Nuclear mass defect                   |
 
 Consider a system of protons and neutrons and the nucleus at rest
 
@@ -252,14 +252,14 @@ The mass defect is defined as
 \Delta M_{N}(A,Z) = ZM_{H} + Nm_{n} - M(A,Z) = \frac{E_{B}(A,Z)}{c^{2}}
 ```
 
-> |Quantity|Measurement|
-> |-|-|
-> |$M_{H}$|Atomic mass of neutral hydrogen atom|
-> |$1 u$|$931.49$ $MeV/c^{2}$|
+> | Quantity | Measurement                          |
+> | -------- | ------------------------------------ |
+> | $M_{H}$  | Atomic mass of neutral hydrogen atom |
+> | $1 u$    | $931.49$ $MeV/c^{2}$                 |
 
 ## Nuclear Stability
 
-For small $Z$, stable nuclei have roughly the same number of protons and neutrons $(Z \approx N)$.  For large nuclei, stable isotopes have $Z < N$
+For small $Z$, stable nuclei have roughly the same number of protons and neutrons $(Z \approx N)$. For large nuclei, stable isotopes have $Z < N$
 
 There also seems to be a pattern of even $Z$ and even $N$ for stable nuclei.
 
@@ -287,13 +287,13 @@ M_{N}(A,Z) = (Zm_{p} + Nm_{n}) - \frac{E_{B}(A,Z)}{c^{2}}
 
 Coeffiecients of the semi-empirical mass formula
 
-> |Term|Quantity|Value $(MeV)$|
-> |-|-|-|
-> |Volume|$a_{V}$|$15.8$|
-> |Surface|$a_{S}$|$18.3$|
-> |Coulomb|$a_{C}$|$0.714$|
-> |Asymmetry|$a_{C}$|$23.2$|
-> |Pairing|$a_{\delta}$|$12.0$|
+> | Term      | Quantity     | Value $(MeV)$ |
+> | --------- | ------------ | ------------- |
+> | Volume    | $a_{V}$      | $15.8$        |
+> | Surface   | $a_{S}$      | $18.3$        |
+> | Coulomb   | $a_{C}$      | $0.714$       |
+> | Asymmetry | $a_{C}$      | $23.2$        |
+> | Pairing   | $a_{\delta}$ | $12.0$        |
 
 ### Volume Term
 
