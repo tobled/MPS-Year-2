@@ -138,7 +138,7 @@ The product of the delta function with any function $f(x)$ is zero for all $x$ e
 
 ## Convolution
 
-Convolution is a mathematical process which takes 2 input functions $f(x)$ and $g(x)$and produces an output function.
+Convolution is a mathematical process which takes 2 input functions $f(x)$ and $g(x)$ and produces an output function.
 
 > $f(x)$ is the responce of a measurement system and g(x) is the quantity being measured. The convolution gives what we actually measure, it tells us how the properties of our measurement system distort the quantity being measured.
 

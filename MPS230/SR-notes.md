@@ -209,3 +209,23 @@ In the rest frame, the time difference should be 0 but in the other rest frame, 
 ```
 
 This shows that simultaneity is a property of the reference frame, and not an intrinsic property of two clocks.
+
+## Space-Time Diagrams
+
+Draw on 2D planes with one spacial and one time direction. Have time and $x$ on axis but multiply $t$ by speed of light to have both in units of length $ \rightarrow ct \times x$. Coordinates of $(ct, x)$
+
+> Consider lines of constant, time or distance in the x space. If the y axis was directed in to the page then the light would curve in the form of a cone, thus prompting the name 'light cone'
+
+Imagine a line for light that is travelline, it is at a $45^{\circ}$ angle relative to the x axis.
+
+Lines of $ct'$ and $x'$ are found going through the same origin but are closer to the line of light
+
+> Consider using different colours
+
+## Paradoxes
+
+### Barn-Pole/ Ladder Paradox
+
+Imagine a long ladder and a barn with two doors opposite that has a shorter width between them than the ladder. Say you are to move the ladder in to the barn through the path of the doors. You must put the ladder in the barn and shut the doors simultaneously, is this possible?
+
+### Twins Paradox

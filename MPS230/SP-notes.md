@@ -400,13 +400,148 @@ Conservation of momentum requires that $D$ and $\alpha$ move with equal and oppo
 Alpha decays typically release energies of order 5 MeV which is much smaller than the rest energies of the particles where $T \ll mc^{2}$ we may safely use the non-relatavistic approximation.
 
 ```math
-\frac{T_{D}}{T_{\alpha}} = \frac{m_{D}}{m_{\alpha}}, \, T_{\alpha} + T_{D} = Q
+\frac{T_{\alpha}}{T_{D}} = \frac{m_{D}}{m_{\alpha}}, \quad T_{\alpha} + T_{D} = Q
 ```
 
 So,
 
 ```math
-T_{D} = Q \frac{m_{\alpha}}{m_{\alpha}+m_{D}}, \, T_{\alpha} = Q \frac{m_{D}}{m_{\alpha}+m_{D}}
+T_{D} = Q \frac{m_{\alpha}}{m_{\alpha}+m_{D}}, \quad T_{\alpha} = Q \frac{m_{D}}{m_{\alpha}+m_{D}}
 ```
 
 Typically, the $\alpha$ particle carries 98% of the Q value while the heavier daughter nucleus carries about 2%. Recoil energy is not negligible on orders of 100 keV which exceeds many atomic binding energies in solids. If the decay occurs near the surface of a source, the recoiling nucleus may also escape into the surrounding material.
+
+### Gamow Theory
+
+To explain the mechanism of $\alpha$ decay, it is proposed that the $\alpha$ particle is preformed inside the parent nucleus. It is formed when 2 protons and neutrons from their highest energy levels combine to form a quasi-bound state.
+
+Inside a nucleus, the $\alpha$ particle experiences both the short-range attractive strong nuclear force and the long-range Coulomb repulsion from the daughter nucleus. At small seperations the strong force dominates which produces a potential well that confines the $\alpha$ particle. Beyond the surface, the strong force goes to 0 and only the Coulomb force remains, making a potential barrier
+
+If the $\alpha$ particle and the daughter nucleus are just in contact then strong force falls to zero and contact distance $r$ is given as:
+
+```math
+r = R_{D} + R_{\alpha} = r_{0}\left(A^{\frac{1}{3}}_{D}+A^{\frac{1}{3}}_{\alpha}\right)
+```
+
+## Beta Decay
+
+The most basic type of beta decay is the conversion of a neution into a proton ora proton into a neutron. Both $Z$ and $N$ change by one unit
+
+```math
+Z \rightarrow Z \pm 1 \qquad N \rightarrow N \mp 1
+```
+
+$A$ remains constant which allows for unstable nuclei to approach the stable isobar.
+
+### The Neutrino
+
+In the 1910's and 20's, the continuous distribution of the $\beta$ electrons were studied. With $\alpha$ decay, the emitted particles ave sharp, well-defined energies by the difference in energy between the initial and final states. This is not the case with $\beta$ decay as a spectrum was found with properties:
+
+```math
+0 \leq E_{\beta} \leq E_{max}
+```
+
+This concludes with the idea that there must be another particle emitted that carries away the missing energy and momentum.
+
+> The neutrino will be treated as massless
+
+## Beta Minus Decay
+
+Neutron turns into a proton, emitting an electron and an antineutrino to balance the lepton nummber.
+
+```math
+n \rightarrow p + e^{-} + \bar{\nu_{e}}
+```
+
+In general:
+
+```math
+^{A}_{Z}X \rightarrow ^{A}_{Z+1}Y + e^{-} + \bar{\nu_{e}}
+```
+
+A free neutron can decay spontaneously unlike a proton because it has more mass than the decaying products
+
+Q value interms of nuclear masses is
+
+```math
+Q_{\beta^{}-} = [M_{N}(A,Z) - M_{N}(A, Z+1)-m_{e}]c^{2}
+```
+
+Then converting to ***atomic masses*** $M(A,Z)$ related by:
+
+```math
+M(A,Z)c^{2} = M_{N}(A,Z)c^{2} + Zm_{e}c^{2} - \sum_{i=1}^{Z} B_{atom, \, i}
+```
+
+With $B_{atom, \, i}$ the individual electron binding enrgies, the Q-Value can be expressed as:
+
+```math
+Q_{\beta^{-}} = \left([M(A,Z) - Zm_{e}] - [M(A,Z+1) - (Z+1)m_{e}] - m_{e} \right) c^{2} + [\sum_{i=1}^{Z+1} B_{atom, \, i} - \sum_{i=1}^{Z} B_{atom, \, i}]
+```
+
+These binding energies are small and can be neglected
+
+```math
+Q_{\beta^{-}} = \left([M(A,Z) - Zm_{e}] - [M(A,Z+1) - (Z+1)m_{e}] - m_{e} \right) c^{2}
+```
+
+For $\beta^{-}$ decay, the electron masses cancel and lead to
+
+```math
+Q_{\beta^{-}} = [M(A,Z)-M(A,Z+1)]c^{2}
+```
+
+The released energy is shared between the electron and neutrino:
+
+```math
+Q_{\beta^{-}}=T_{e} + E_{\nu} \qquad (T_{e})_{max} = (E_{\nu})_{max} = Q_{\beta^{-}}
+```
+
+## Beta Plus Decay
+
+In $\beta^{+}$ decay, a proton converts into a neutron emitting a positron and a neutrino:
+
+```math
+p \rightarrow n + e^{+} + \nu_{e}
+```
+
+A free proton cannot undergo this decay and is only possible if the resulting neutron can occupy a lower energy level than the original proton
+
+In general:
+
+```math
+^{A}_{Z}X \rightarrow ^{A}_{Z-1}Y + e^{+} + \nu_{e}
+```
+
+When using atomic masses. the position mass does not cancel so the Q-value ignoring atomic binding energy differences is:
+
+```math
+Q_{\beta^{-}} = [M(A,Z) - M(A,Z-1)-2m_{e}]c^{2}
+```
+
+## Electron Capture
+
+Electron capture happens when a proton coptures an inner shell electron
+
+```math
+pp + e^{-} \rightarrow n + \nu_{e}
+```
+
+In general:
+
+```math
+^{A}_{Z}X + e^{-} \rightarrow ^{A}_{Z_1}Y+\nu_{e}
+```
+
+The Q-value goes as follows:
+
+```math
+Q_{EC} = [M(A,Z) - M(A,Z-1)]c^{2} - B_{n}
+```
+
+```math
+Q_{EC} = [M(A,Z) - M(A,Z-1)]c^{2}
+```
+
+> Q value must be positive, some nuclei undergo both beta plus and EC while others undergo EC exclusively if $Q_{EC} \geq 0$ and $Q_{\beta^{+}} < 0$
+
