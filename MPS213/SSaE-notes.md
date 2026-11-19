@@ -60,7 +60,7 @@ P(r) = P(r+\delta r) + \frac{GM}{r^{2}} \rho \, \delta r
 Rearrange
 
 ```math
-P(r+\delta r) - P(r) = -\frac{GM}{r^{2}} \rho \, \delta r 
+P(r+\delta r) - P(r) = -\frac{GM}{r^{2}} \rho \, \delta r
 ```
 
 $P(r+\delta r) - P(r)$ becomes $dP$
@@ -136,13 +136,13 @@ dM = -4 \pi r^{2} \rho (r) \cdot \frac{r^{2}}{GM\rho (r)} dP
 ```
 
 ```math
--\frac{G}{4\pi r^{4}} \left[\frac{M_{S}^{2}}{2}\right] = -\frac{GM_{S}^{2}}{8\pi r^{4}} = P_{S} - P_{C} 
+-\frac{G}{4\pi r^{4}} \left[\frac{M_{S}^{2}}{2}\right] = -\frac{GM_{S}^{2}}{8\pi r^{4}} = P_{S} - P_{C}
 ```
 
 $r(M)$ will always be less than $R_{S}$ and $P_{S} = 0$
 
 ```math
-P_{C} > \frac{GM_{S}^{2}}{8\pi R_{s}^{4}} 
+P_{C} > \frac{GM_{S}^{2}}{8\pi R_{s}^{4}}
 ```
 
 ## Virial Theorem
@@ -150,19 +150,19 @@ P_{C} > \frac{GM_{S}^{2}}{8\pi R_{s}^{4}}
 Relates the potential and kinetic energies of a system of particles in equilibrium. Started by equating the equations of hydrostatic support and mass conservation.
 
 ```math
-\frac{dP}{dr} \cdot \frac{4}{3} \pi r^{3} = -\frac{GM(r)}{r^{2}} \rho (r) \cdot \frac{4}{3} \pi r^{3} 
+\frac{dP}{dr} \cdot \frac{4}{3} \pi r^{3} = -\frac{GM(r)}{r^{2}} \rho (r) \cdot \frac{4}{3} \pi r^{3}
 ```
 
 Substitute the equation of mass conservation:
 
 ```math
-\frac{dP}{dr} \cdot \frac{4}{3} \pi r^{3} = -\frac{GM(r)}{3r}\cdot \frac{dM}{dr} 
+\frac{dP}{dr} \cdot \frac{4}{3} \pi r^{3} = -\frac{GM(r)}{3r}\cdot \frac{dM}{dr}
 ```
 
 Cancel $dr$ by multiplication and separate variables
 
 ```math
-3 \int_{P_{C}}^{P_{S}} \frac{4}{3} \pi r^{3} dP = - \int_{0}^{M_{S}} \frac{GM(r)}{r}\cdot dM 
+3 \int_{P_{C}}^{P_{S}} \frac{4}{3} \pi r^{3} dP = - \int_{0}^{M_{S}} \frac{GM(r)}{r}\cdot dM
 ```
 
 Use volume and integrate by parts, realise that at core pressure is big but has no volume and at surface volume is big but has no pressure
@@ -342,3 +342,77 @@ Use $\rho = nm_{H}\mu$
 ```
 
 This is a good approximation for $\mu$ when close to the centre
+
+### Limits of Ideal Gas Law
+
+Assumes interparticle forces are negligible but on length scales closer to the particle size, the interactions become important. particle separation decreases for extremely high densities.
+
+## Pauli Exclusion Principle
+
+> No more than two electrons (of opposite spin) can occupy the same quantum state
+
+Position described by: $x, y, z$
+
+Momentum described by: $p_{x}, p_{y}, p_{z}$
+
+## Heisenberg's Uncertainty
+
+Uncertainty in the product
+
+```math
+\delta x \delta p \geq \frac{\hbar}{2}
+```
+
+> Phase space is a point in six-dimensional position-momentum space
+
+A quantum state is a volume, $h^{3}$, of space, and Pauli's exclusion principle tells us that no more than 2 electrons are permitted to occupy eachf volume $h^{3}$ of phase space.
+
+## Electron Degeneracy
+
+As electron density increases, electrons become increasingly crowded in position space. Eventually two electrons with almost the same momenta will occupy almost the same point in position space. This volume of phase space will then be full.
+
+If momentum is significantle different, an electron can occupt the same region of position space but with a different region of phase space. This means a higher momentum than what it would in an ideal gas meaning higher pressure.
+
+In a degenerate gas the ions have a higher momenta than the electrons so they are less likey to violate Pep. The pressure due to the ions can then be treated as an ideal gas, but the pressure due to the degenerate electrons is much larger and hence the gas obeys a different equation of state.
+
+Non-relativistically degenerate gas:
+
+```math
+P = \frac{1}{20} \left(\frac{3}{\pi}\right)^{\frac{2}{3}} \frac{h^{2}}{m_{r}} n_{e}^{\frac{5}{3}}
+```
+
+Relativistically degenerate gas:
+
+```math
+P = \frac{1}{8} \left(\frac{3}{\pi}\right)^{\frac{1}{3}} hcn_{e}^{\frac{4}{3}}
+```
+
+Convert electron density $n_{e}$ to mass density $\rho$, for each mass of hydrogen $m_{H}$ there is one electron. For helium and heavier, there is approx. half an electron for each $m_{H}$.
+
+```math
+n_{e} = \frac{\rho X}{m_{H}} + \frac{\rho (1-X)}{2m_{H}} = \frac{\rho(1+X)}{2m_{H}}
+```
+
+So equation of state of a non-relativistically degenerate gas:
+
+```math
+P_{gas} = K_{1} \rho^{\frac{5}{3}}
+```
+
+And for relativistically degenerate gas:
+
+```math
+P_{gas} = K_{2} \rho^{\frac{4}{3}}
+```
+
+Where
+
+```math
+K_{1} = \frac{h^{2}}{20m_{e}} \left(\frac{3}{\pi}\right)^{\frac{2}{3}} \left[\frac{1+X}{2m_{H}}\right]^{\frac{5}{3}}
+```
+
+```math
+K_{2} = \frac{hc}{8} \left(\frac{3}{\pi}\right)^{\frac{1}{3}} \left[\frac{1+X}{2m_{H}}\right]^{\frac{4}{3}}
+```
+
+So for a degenerate gas, the pressure depends only on the density and chemical composition and is independent of temperature.
