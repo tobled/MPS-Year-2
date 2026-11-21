@@ -416,3 +416,205 @@ K_{2} = \frac{hc}{8} \left(\frac{3}{\pi}\right)^{\frac{1}{3}} \left[\frac{1+X}{2
 ```
 
 So for a degenerate gas, the pressure depends only on the density and chemical composition and is independent of temperature.
+
+## Energy Transport
+
+There are three mechanisms for transporting energy in stars: Conduction, Convection and Radiation
+
+Both transfer energy between particles but radiation also transfers through photons
+
+Conduction and radiation carry similar energies but the number density of particles is much less thant he number density of photons so particles dominate the star's energy density. As well as the mean free path between collisions is far smaller, on orders of angstromms for particles and of order of cm for photons
+
+> For MS stars, conduction is negligible and radiation is dominant because photons can travel further from high to low temperature regions before undergoing collision and transferring energy
+
+```math
+F_{rad} = - \lambda_{rad} \frac{dT}{dr}
+```
+
+Radiative flux is the energy carried by radiation/ metre squared / second, negative which shows that heat flows down the temperature gradient.
+
+### Radiativity and Opacity
+
+Radiative conductivity is a measure of the readinesss of heat to flow, opacity is the inverse of conductivity
+
+```math
+\kappa = \frac{4acT^{3}}{3 \rho \lambda}
+```
+
+Rearrange and sub to find dT/dr
+
+### Equation of Radiative Transport
+
+```math
+\frac{dT}{dr} = \frac{-3 \kappa \rho L}{16 \pi acr^{2}T^{3}}
+```
+
+This is the temperature gradient for a star that had all its energy transported by radiation. Where $L$ is luminosity at $r$, $\kappa$ is the opacity at $r$, $a$ is the radiation density constant.
+
+### Equations in terms of Mass
+
+Invert the equation of mass conservation and divide all other equations through:
+
+```math
+\frac{dP}{dM} = \frac{-GM}{4 \pi r^{4}}
+```
+
+```math
+\frac{dr}{dM} = \frac{1}{4 \pi r^{2} \rho}
+```
+
+```math
+\frac{dL}{dM} = \epsilon
+```
+
+```math
+\frac{dT}{dM} = \frac{-3\kappa L}{64 \pi^{2} ac r^{4}T^{3}}
+```
+
+Assume that the changes in small time are negligible and can be omitted, evolution in chemical composition is the main factor for change. The equations of stellar structure ignore the effects of convection but convection is important for certain regions of most stars. Equations must be reworked if the convection condition is met.
+
+#### Boundary Conditions for Equations
+
+At $r=0$, $M=0$ and $L=0$
+At $r = r_{s}$, $T = 0$ and $\rho = 0$
+
+### Convection
+
+Convection can occur when the temperature gradient exceeds a critical value.
+
+![densitychange](./pic/den.png)
+
+Assume that there is some element of material at radius, $r$, and we move it some $\delta r$. The condition for convection is when the element difference in density is less than its surroundings:
+
+```math
+\rho - \delta \rho < \rho - \Delta \rho \qquad \text{OR} \qquad \delta \rho > \Delta \rho
+```
+
+Whether this condition is satisfied depends on how quickly the element expands due to the decrease in surrounding pressure as well as the rate at which the density of the surroundings decreases with height.
+
+In terms of temperature gradient, the element rise adiabatically and at a speed less than the sound speed so $\delta P = \Delta P$
+
+For adiabatic gases:
+
+```math
+PV^{}\gamma = \text{const.} \qquad \text{and} \qquad \frac{P}{\rho^{\gamma}} = \text{const.}
+```
+
+Considering $P,\, \rho \; \text{at} \; r, \, r+\delta r$:
+
+```math
+\frac{(P-\delta P)}{(\rho - \delta \rho)^{\gamma}} = \frac{P}{\rho^{\gamma}}
+```
+
+Using this inequality:
+
+```math
+\frac{\rho}{\gamma P} \delta P > \frac{d \rho}{dr} \delta r
+```
+
+And recalling that the pressures of the element and surroundings are equal and as $dr \rightarrow 0$, $\delta P \delta r = dP/dr$:
+
+```math
+\frac{\rho}{\gamma P} \frac{dP}{dr} > \frac{d \rho}{dr}
+```
+
+```math
+\frac{P}{\rho} \frac{d\rho}{dP} < \frac{1}{\gamma}
+```
+
+For convection to occur, the adiabatic gradient must be greater than the stellar gradient
+
+![adia](./pic/ad.png)
+
+Take ideal gas law and differentiate it:
+
+```math
+P = \frac{kT \rho}{m} \qquad \rightarrow \qquad \frac{dP}{P} = \frac{d\rho}{\rho} + \frac{dT}{T}
+```
+
+Sub $d\rho/ \rho$ and rearrange:
+
+```math
+\frac{P}{T}\frac{dT}{dP} > \frac{\gamma-1}{\gamma}
+```
+
+If this is satisfied then, convection will occur. Rising elements are less dense and are hotter whilst falling elements are more dense and cooler.
+
+The two ways this is satisfied is if $\gamma \approx 1$ for cool or partially ionized outer layers or the temperature gradient is very steep for hot cores of stars.
+
+### Opacity in Detail
+
+Opacity is the resistance of a material to the flow of heat via the main transportation methods: Convection, Radiation, and Conduction. Opacity is primarily concerned with impeding the movement of photons.
+
+There are 4 interactions with electrons that change the opacity.
+
+![opacityelectrons](./pic/opacity.png)
+
+#### Bound-Bound Transition
+
+An electron absorbs a photon of discrete wavelength and moves to a higher energy level ($E_{1} \rightarrow E_{2}$) which produces spectral lines.
+
+```math
+E_{2} - E_{1} = h \nu_{bb}
+```
+
+#### Bound-Free Transition
+
+A bound electron with energy $E_{1}$ absorbs a photon, and is ejected from its atom with energy $E_{3} > E_{n=\infty}$ ($E_{1}\rightarrow E_{3}$). Produces an absorption continuum, change in energy is:
+
+```math
+E_{3} - E_{1} = h\nu_{bf}
+```
+
+#### Free-Free Transition
+
+A free electron with energy $E_{3}$ absorves a photon and moves to a new energy state $E_{4}$ without restrictions on photon energies, this produces a continuum absorption and low energy photons are more likely to be absorbed. ($E_{3}\rightarrow E_{4}$)
+
+```math
+E_{4} - E_{3} = h\nu_{ff}
+```
+
+#### Scattering
+
+If photon energy satisfies $h\nu << mc^{2}$ then particle can be considered stationary , no radiation is absorbed but blocks passage of photons so energy transport rate is slowed.
+
+### Opacity in Functional Form
+
+Solid - opacity for star with density $0.1 \text{kgm}^{-3}$
+Dotted - power law approximation for three different regimes
+
+![opacitycurve](./pic/opacfunc.png)
+
+Assume $\kappa = \kappa_{0} \rho^{\alpha}T^{\beta}$, where $\alpha$, $\beta$ are slowly varying functions of density and temperature, and $k_{0}$ is a constant for stars of a given composition
+
+At low temperatures, opacity is high and at high temperatures, opacity is constant and does not increase with T. This is because when T is high, the gas is highly ionised and the photons have very high energies so scattering dominates at high T, $\alpha = \beta = 0$, $\kappa = \kappa_{0}$
+
+At the lowest temperatures Opacity is low and decreases with T. This is because the electrons are highly bound with limited scattering and FF absorption, the photons lack suffiecient energy to ionise the gas so little BF. $\alpha = 0.5$, $\beta = 4$, $\kappa = \kappa_{0}$.
+
+In the middle opacity is at maximum, where both BF and FF processes are important. $\alpha=1$, $\beta = -3.5$, $\kappa = \kappa_{0}\rho/ T^{3.5}$
+
+## Nuclear Binding Energy
+
+![nuclearbind](./pic/nbe.jpg)
+
+Binding energy:
+
+```math
+Q(Z,N) = [Zm_{p} + Nm_{n} - m(Z,N)]c^{2}
+```
+
+Binding energy per nucleon
+
+```math
+Q(Z,N)/(Z+N)
+```
+
+### Fusion
+
+Electromagnetic and Strong nuclear forces are most applicable to Fusion
+
+![Coul](./pic/coul.png)
+
+Height of Coulomb barrier set by electrostatic repulsion, and can be estimated as the electrostatic force. To get over this barrier, we must think of a quantum solution as the classical one does not hold by increasing the kinetic energies. The nuclei will have a Maxwellian distribution of energies, some more, less than average.
+
+Using Heisenberg's Uncertainty Principle: $\delta E \delta t \geq \hbar/2$, there is a chance where fusion occur if the extra energy required by a nucleus to overcome the coulomb barrier and the time over which that energy is needed satisfies.

@@ -2,14 +2,13 @@
 
 ## Update this
 
-- 212 - add week 2 work for week 3 (current)
-- 213 - Done
-- 217 - Entire
-- 230 - 50%
+- 217 fourier
+- 217 odepde
+- 230 SR
+- 230 SP
+- 217 thermal homework
+- 217 thermal notes
 
-### Priority
-
-1. 212
-2. 230
-3. 217
-4. 213
+- 213 start p4
+- 213 homework question 3
+- find sources
