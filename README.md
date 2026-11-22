@@ -2,7 +2,6 @@
 
 ## Update this
 
-- 217 fourier
 - 217 odepde
 - 230 SR
 - 230 SP
