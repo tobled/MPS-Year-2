@@ -5,7 +5,7 @@
 - 217 odepde c7+
 - 230 SR
 - 230 SP
-- 217 thermal notes
+- 217 thermal notes c7+
 
 - 217 thermal homework
 - 213 start p4
