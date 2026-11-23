@@ -445,7 +445,7 @@ This concludes with the idea that there must be another particle emitted that ca
 
 > The neutrino will be treated as massless
 
-## Beta Minus Decay
+### Beta Minus Decay
 
 Neutron turns into a proton, emitting an electron and an antineutrino to balance the lepton nummber.
 
@@ -467,7 +467,7 @@ Q value interms of nuclear masses is
 Q_{\beta^{}-} = [M_{N}(A,Z) - M_{N}(A, Z+1)-m_{e}]c^{2}
 ```
 
-Then converting to ***atomic masses*** $M(A,Z)$ related by:
+Then converting to **_atomic masses_** $M(A,Z)$ related by:
 
 ```math
 M(A,Z)c^{2} = M_{N}(A,Z)c^{2} + Zm_{e}c^{2} - \sum_{i=1}^{Z} B_{atom, \, i}
@@ -497,7 +497,7 @@ The released energy is shared between the electron and neutrino:
 Q_{\beta^{-}}=T_{e} + E_{\nu} \qquad (T_{e})_{max} = (E_{\nu})_{max} = Q_{\beta^{-}}
 ```
 
-## Beta Plus Decay
+### Beta Plus Decay
 
 In $\beta^{+}$ decay, a proton converts into a neutron emitting a positron and a neutrino:
 
@@ -519,7 +519,7 @@ When using atomic masses. the position mass does not cancel so the Q-value ignor
 Q_{\beta^{-}} = [M(A,Z) - M(A,Z-1)-2m_{e}]c^{2}
 ```
 
-## Electron Capture
+### Electron Capture
 
 Electron capture happens when a proton coptures an inner shell electron
 
@@ -545,3 +545,162 @@ Q_{EC} = [M(A,Z) - M(A,Z-1)]c^{2}
 
 > Q value must be positive, some nuclei undergo both beta plus and EC while others undergo EC exclusively if $Q_{EC} \geq 0$ and $Q_{\beta^{+}} < 0$
 
+## Gamma Decay
+
+Most $\beta$ and $\alpha$ decays leave the final nucleus in an excited state. These rapidly decay to the ground state through the emission of one or more $\gamma$ rays. A stationary excited mass will conserve momentum by recoiling in the opposite direction to the gamma ray such that:
+
+```math
+p_{R} + p_{\gamma} = 0 \quad \rightarrow \quad |p_{R}| = |p_{\gamma}|
+```
+
+Using the relationship that $E_{\gamma} = c p_{\gamma}$
+
+```math
+|p_{R}| = \frac{E_{\gamma}}{c}
+```
+
+Energy conservation tells us that:
+
+```math
+E_{i} = E_{f} + E_{\gamma} + T_{R} \quad \rightarrow \quad \Delta E = E_{i} - E_{f} = E_{\gamma} + \frac{E_{\gamma}^{2}}{2Mc^{2}}
+```
+
+Use the non-relatavistic approximation for the recoil since the nucleus has a large rest energy $(\Delta E << Mc^{2})$
+
+```math
+T_{R} = \frac{p_{R}^{2}}{2M} = \frac{E_{\gamma}^{2}}{2Mc^{2}}
+```
+
+```math
+E_{\gamma} = Mc^{2} \left[\sqrt{1+\frac{2\Delta E}{Mc^{2}}} - 1\right]
+```
+
+$\Delta E$ is small so expand the square root:
+
+```math
+\sqrt{1+x} \approx 1 + \frac{x}{2} - \frac{x^{2}}{8} + ...
+```
+
+With only the first two non-zero terms:
+
+```math
+E_{\gamma} \approx \Delta E - \frac{(\Delta E)^{2}}{Mc^{2}}
+```
+
+The range of energies is between 1 and 100 eV recoils, for high-energy $\gamma$ rays, radiation damage may be observable
+
+## Decay Rates
+
+If there are many identical nuclei at $t=0$, let $N(t)$ denote the number of undecayed nuclei at time $t$ where $\lambda$ is the decay constant:
+
+```math
+\frac{dN}{dt} = -\lambda N
+```
+
+Separating the variables and integrating to get:
+
+```math
+N(t) = N(0)e^{-\lambda t}
+```
+
+Let the mean lifetime of unstable particles be $\tau$, weighted by the number of $\lambda N(t)$ of particles decaying within the interval $dt$:
+
+```math
+\tau = \frac{1}{N(0)} \int_{0}^{\infty} t \lambda N(t)dt
+```
+
+This evaluates as:
+
+```math
+\tau = \frac{1}{\lambda} \qquad \tau_{1/2} = \frac{\text{ln }2}{\lambda}
+```
+
+```math
+\tau = \frac{1}{\lambda} = \frac{\tau_{1/2}}{\text{ln }2}
+```
+
+The number of decays per unit time (decay rate) is defined as the activity:
+
+```math
+A(t) = -\frac{dN}{dt} = \lambda N(t) = \frac{N(t)}{\tau}
+```
+
+> There will be random fluctuations which can be measured with the standard deviation, which for $\Delta N > 5$ can be approximated as $\sigma = \sqrt{\Delta N}$
+>
+> It is common to express the decay of an unstable partivle in terms of its decay width $\Gamma$ with units of energy: $\lambda = \frac{1}{\tau} = \frac{\Gamma}{\hbar}$
+
+### Multi-Modal Decays
+
+A radioactive nuclide can sometimes decay through more than one channel, each with its own decay constant. One parent nuclide can decay into several daughter nuclides each with partial decay constant $\lambda_{i}$
+
+The total decay rate is the sum of the partial decay constants so that:
+
+```math
+N(t) = N(0)\prod_{i} e^{-\lambda_{i}t}=N(0)e^{-\sum_{i}\lambda_{i}t}
+```
+
+Half-life of the parent is therefore:
+
+```math
+\tau_{1/2} = \frac{\text{ln }2}{\sum_{i}\lambda_{i}}
+```
+
+The branching ratio $B_{j}$ is:
+
+```math
+B_{j} = \frac{\lambda_{j}}{\sum_{i}\lambda_{i}}
+```
+
+## Nuclear Reactions
+
+A typical nuclear reaction can be expressed as:
+
+```math
+X + a \rightarrow Y + b
+```
+
+Where $a$ is the incoming projectile, $X$ is the target nucleus, and $Y$ and $b$ are the products
+
+$$
+X + a \rightarrow
+\begin{cases}
+  X + a & \text{elastic scattering} \\
+  X^{*} + a & \text{inelastic scattering} \\
+  Y + b & \text{nuclear transformation}
+\end{cases}
+$$
+
+For elastic scattering, energy is retained in the COM system and the target nucleus $X$ remains unchanged. For inelastic scattering, the nucleus $X$ is excited to $X^{*}$
+
+### Reaction Q-Value
+
+Consider the reaction:
+
+```math
+X + a \rightarrow Y+b
+```
+
+The Q value is:
+
+```math
+Q = (m_{X} + m_{a} - m_{Y} - m_{b})c^{2}
+```
+
+The conservation of energy for rest and kinetic energies give:
+
+```math
+m_{X}c^{2} + m_{a}c^{2} + T_{X} + T_{a} = m_{Y}c^{2} + m_{b}c^{2} + T_{Y} + T_{b}
+```
+
+This allows the Q-value to be written like this:
+
+```math
+Q = (T_{Y} + T_{b}) - (T_{X} + T_{a})
+```
+
+Any chance in the kinetic energy of the reacting system must be balanced by an equal and opposite change in its rest energy.
+
+The Q-Value may be positive, negative, or zero:
+
+- If $Q > 0$, Exothermic reaction, rest energy is converted to kinetic energy of the final products
+- If $Q < 0$, Endothermic reaction, kinetic energy must be supplied which is converted to additional rest energy
