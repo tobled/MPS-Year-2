@@ -72,7 +72,7 @@ Then $p(V,T)$ gives:
 dp = \left(\frac{\partial p}{dV}\right)_{T} dV + \left(\frac{\partial p}{dT}\right)_{V} dT
 ```
 
-#### Proof
+#### Proof 1
 
 Starting from First law and work done
 
@@ -388,4 +388,208 @@ Minus sign for an attractive interaction, divide by two to avoid double counting
 
 ```math
 a' \equiv 3 \beta b'
+```
+
+### Second Law
+
+Three equivalent statements:
+
+- No process is possible whose sole result is the transfer of heat from a colder to a hotter body
+- No process is possible whose sole reult is the complete conversion of heat into work
+- No heat engine operating between two temperatures $T_{h}$ and $T_{c}$ can be more efficient than a Carnot engine
+
+Clausius' Theorem, for a reversible closed cycle:
+
+```math
+\oint \frac{dQ}{T} = 0
+```
+
+Clausius' inequality, for any cycle:
+
+```math
+\oint \frac{dQ}{T} \leq 0
+```
+
+#### Proof 2
+
+For an adiabatic path like on the Carnot cycle, $dQ = 0$ so:
+
+```math
+\int_{2}^{3} \frac{dQ}{T} = \int_{4}^{1} \frac{dQ}{T} = 0
+```
+
+Along the isotherms, $dU=0$ and $dW = -pdV$
+
+```math
+\frac{dQ}{T} = \frac{nR}{V}dV
+```
+
+So that
+
+```math
+\int_{1}^{2} \frac{dQ}{T} = nR \int_{V_{1}}^{V_{2}} \frac{1}{V} dV = nR \text{ln}\frac{V_{2}}{V_{1}}
+```
+
+```math
+\int_{3}^{4} \frac{dQ}{T} = nR \int_{V_{3}}^{V_{4}} \frac{1}{V} dV = nR \text{ln}\frac{V_{4}}{V_{3}}
+```
+
+We see that:
+
+```math
+4 \rightarrow 1: T_{1}V_{1}^{\gamma -1} = T_{4}V_{4}^{\gamma -1}\implies \frac{V_{4}}{V_{1}} = \left(\frac{T_{1}}{T_{4}}\right)^{\frac{1}{\gamma-1}}
+```
+
+```math
+2 \rightarrow 3: T_{2}V_{2}^{\gamma -1} = T_{3}V_{3}^{\gamma -1}\implies \frac{V_{3}}{V_{2}} = \left(\frac{T_{2}}{T_{3}}\right)^{\frac{1}{\gamma-1}}
+```
+
+We know that $T_{1} = T_{2}$ and $T_{3} = T_{4}$
+
+```math
+\frac{T_{2}}{T_{3}} = \frac{T_{1}}{T_{4}}
+```
+
+```math
+\frac{V_{4}}{V_{1}} = \frac{V_{3}}{V_{2}} \implies \frac{V_{2}}{V_{1}} = \frac{V_{3}}{V_{4}}
+```
+
+```math
+nR \text{ln} \left(\frac{V_{2}}{V_{1}}\right) = nR \text{ln} \left(\frac{V_{3}}{V_{4}}\right) = -nR \text{ln} \left(\frac{V_{4}}{V_{3}}\right)
+```
+
+So
+
+```math
+\int_{1}^{2} \frac{dQ}{T} + \int_{3}^{2} \frac{dQ}{T} + \int_{4}^{3} \frac{dQ}{T} + \int_{1}^{4} \frac{dQ}{T} = 0
+```
+
+### Entropy
+
+Entropy is defined as:
+
+```math
+dS = \frac{\bar dQ_{rev}}{T}
+```
+
+Entropy is a function of state, it is an intrinsic property of a system, Entropy changes around a closed reversible cycle $=0$
+
+### Proof 3
+
+Going from point $A$ to $B$ via two different paths representing reversible processes:
+
+```math
+\left(\int_{A}^{B} \frac{dQ_{rev}}{T}\right)_{path 1} + \left(\int_{B}^{A} \frac{dQ_{rev}}{T}\right)_{path 2} = 0
+```
+
+From Clausius' theorem, rewrite the sign
+
+```math
+\left(\int_{A}^{B} \frac{dQ_{rev}}{T}\right)_{path 1} - \left(\int_{B}^{A} \frac{dQ_{rev}}{T}\right)_{path 2} = 0
+```
+
+```math
+\left(\int_{A}^{B} \frac{dQ_{rev}}{T}\right)_{path 1} = \left(\int_{B}^{A} \frac{dQ_{rev}}{T}\right)_{path 2} = 0
+```
+
+Therefore:
+
+```math
+\Delta S = \int \frac{dQ_{rev}}{T}
+```
+
+### Changes Along Adiabatic and Isothermal Paths
+
+For an isothermal change of state, Q is the heat transferred into the system along the path:
+
+```math
+\Delta S = \int \frac{Q}{T}
+```
+
+If the system discards heat, $Q<0$
+
+During the freezing of a solid, at constant temperature, the entropy of the solid decreases. Heat is taken from the system and $dQ<0$. Since $T$ is constant, $dS<0$
+
+### Irreversible processes
+
+By Clausius' equality
+
+```math
+\oint_{cycle} \frac{dQ}{T} \leq 0
+```
+
+```math
+\left(\int_{A}^{B} \frac{dQ}{T}\right)_{irreversible} + \int_{B}^{A} \frac{dQ_{rev}}{T} \leq 0
+```
+
+Exhange limits (change sign):
+
+```math
+\left(\int_{A}^{B} \frac{dQ}{T}\right)_{irreversible} - \int_{A}^{B} \frac{dQ_{rev}}{T} \leq 0
+```
+
+```math
+\left(\int_{A}^{B} \frac{dQ}{T}\right)_{irreversible} \leq \int_{A}^{B} \frac{dQ_{rev}}{T}
+```
+
+We can make $A$ as close to $B$ as we like, so in general
+
+```math
+dS = \frac{\bar dQ_{rev}}{T} \geq \frac{\bar dQ}{T}
+```
+
+If this is true for a thermally isolated system, $dS\geq 0$. The Universe is the ultimate thermally isolated system, and we derived $dS\geq 0$ from the second law.
+
+> Second Law: A process cannot occur if it would result in a decrease in the total entropy of the Universe
+
+### Local and Global Changes in Entropy
+
+The second law does not forbid local decreases in entropy of a system that is not isolated. Only the entropy of the Universe must not decrease
+
+```math
+\Delta S (\text{Universe}) = \Delta S (\text{System}) + \Delta S (\text{Surroundings}) \geq 0
+```
+
+### Calculating Entropy in Irreversible Processes
+
+For an irreversible process, all we know is that over the irreversible path $dS \geq \bar dQ/ T$. Because Entropy is a function of statef, if we can find a reversible path between initial and final states, we can calculate the change in entropy of the system using the path
+
+> Does not include calculating the entropy of the Universe
+
+### Entropy and the First Law
+
+From the first law:
+
+```math
+dU = dQ + dW
+```
+
+For reversible processes:
+
+```math
+dW = -pdV \qquad dQ = TdS
+```
+
+```math
+dU = TdS - pdV
+```
+
+Since $U$ is a function of state:
+
+```math
+dU = \left(\frac{\partial U}{\partial S}\right)_{V} dS + \left(\frac{\partial U}{\partial V}\right)_{T} dV
+```
+
+Hence
+
+```math
+T = \left(\frac{\partial U}{\partial S}\right)_{V} \qquad p = \left(\frac{\partial U}{\partial V}\right)_{T}
+```
+
+This is called the central equation of thermodynamics or the thermodynamic identity.
+
+This leads to two important relations
+
+```math
+T = \left(\frac{\partial U}{\partial S}\right)_{V} \qquad p = -\left(\frac{\partial U}{\partial V}\right)_{S}
 ```
